@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zooperzhou — 轻量好用的移动应用</title>
+<meta name="description" content="Zooperzhou 是独立开发者工作室，打造轻量、好用的移动应用。代表作：几何星球 —— 数学几何可视化。">
+<style>
+  :root{
+    --bg:#fafafa; --card:#fff; --border:#e8e8e8;
+    --text:#171717; --text2:#5c5c5c; --text3:#909090;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+    background:var(--bg);color:var(--text);line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:880px;margin:0 auto;padding:0 24px}
+
+  /* Hero */
+  .hero{text-align:center;padding:96px 24px 64px;
+    background:radial-gradient(560px 220px at 50% 0%, rgba(22,163,74,.08), transparent 70%);}
+  .mark{
+    width:56px;height:56px;border-radius:16px;margin:0 auto 20px;
+    display:grid;place-items:center;font-size:24px;font-weight:800;color:#fff;
+    background:linear-gradient(135deg,#16a34a,#0f766e);
+  }
+  .hero h1{font-size:clamp(30px,5vw,44px);letter-spacing:-.03em;line-height:1.15}
+  .hero p{margin:16px auto 0;max-width:480px;color:var(--text2);font-size:16.5px}
+
+  /* Apps */
+  .section{padding:48px 0 8px}
+  .section h2{font-size:22px;letter-spacing:-.01em;text-align:center;margin-bottom:28px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+  .app{
+    background:var(--card);border:1px solid var(--border);border-radius:14px;
+    padding:24px;transition:transform .2s, border-color .2s;
+  }
+  .app:hover{transform:translateY(-2px);border-color:#d4d4d4}
+  .icon{width:44px;height:44px;border-radius:11px;display:grid;place-items:center;
+    font-size:20px;margin-bottom:14px;background:#f0fdf4;border:1px solid #dcfce7}
+  .app h3{font-size:16px;margin-bottom:6px}
+  .app p{font-size:13.5px;color:var(--text2)}
+  .app .tag{display:inline-block;margin-top:12px;font-size:12px;color:#0f766e;
+    background:#f0fdf4;border:1px solid #dcfce7;padding:3px 10px;border-radius:999px}
+  .app.ghost{display:grid;place-items:center;text-align:center;border-style:dashed;
+    color:var(--text3);min-height:150px}
+  .app.ghost p{font-size:13.5px}
+
+  /* Contact + Footer */
+  .contact{text-align:center;padding:56px 0}
+  .contact a{
+    display:inline-block;margin-top:16px;padding:11px 22px;border-radius:10px;
+    background:var(--text);color:var(--bg);text-decoration:none;font-size:14px;font-weight:600;
+  }
+  footer{border-top:1px solid var(--border);padding:28px 24px;text-align:center;
+    font-size:13px;color:var(--text3)}
+  footer a{color:var(--text3);margin:0 10px}
+  @media (max-width:480px){.hero{padding:64px 20px 40px}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="mark">Z</div>
+  <h1>Zooperzhou</h1>
+  <p>独立开发者工作室，打造轻量、好用的移动应用，让复杂的事情变得直观。</p>
+</header>
+
+<main class="wrap">
+  <section class="section">
+    <h2>我们的应用</h2>
+    <div class="grid">
+      <div class="app">
+        <div class="icon">🪐</div>
+        <h3>几何星球</h3>
+        <p>数学几何可视化 —— 用交互式图形直观呈现几何原理，让抽象的数学概念一目了然。</p>
+        <span class="tag">已在 App Store 上架</span>
+      </div>
+      <div class="app ghost">
+        <p>更多应用筹备中…</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>联系我们</h2>
+    <p style="color:var(--text2);font-size:15px">有问题、建议或需要支持？欢迎随时联系。</p>
+    <a href="mailto:812968653@qq.com">812968653@qq.com</a>
+  </section>
+</main>
+
+<footer>
+  <a href="/privacy.html">隐私政策</a>
+  <span>© 2026 Zooperzhou. 保留所有权利。</span>
+</footer>
+
+</body>
+</html>

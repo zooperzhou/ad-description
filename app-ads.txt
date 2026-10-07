@@ -1,0 +1,4 @@
+# app-ads.txt — Authorized Digital Sellers for Apps
+# 替换 pub- 后面的 16 位数字为你的 AdMob 发布商 ID（AdMob 后台 → 账号设置 → 发布商 ID）
+# 多个账号就一行一个，格式保持一致
+google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
